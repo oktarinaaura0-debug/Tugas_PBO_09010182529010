@@ -1,20 +1,39 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package Tugas_5;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
 public class Tugas_5_1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        BufferedReader dataIn =
+                new BufferedReader(new InputStreamReader(System.in));
+
+        String word1 = "";
+        String word2 = "";
+        String word3 = "";
+
+        System.out.print("Enter word1: ");
+        try {
+            word1 = dataIn.readLine();
+        } catch (IOException e) {
+            System.out.println("Error!");
+        }
+
+        System.out.print("Enter word2: ");
+        try {
+            word2 = dataIn.readLine();
+        } catch (IOException e) {
+            System.out.println("Error!");
+        }
+
+        System.out.print("Enter word3: ");
+        try {
+            word3 = dataIn.readLine();
+        } catch (IOException e) {
+            System.out.println("Error!");
+        }
+
+        System.out.println(word1 + " " + word2 + " " + word3);
     }
-    
 }
