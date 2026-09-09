@@ -1,20 +1,84 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package Tugas_6;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
 public class Tugas_6_4 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        System.out.print("Masukkan angka: ");
+        int angka = Integer.parseInt(br.readLine());
+
+        System.out.print("Masukkan pangkat: ");
+        int pangkat = Integer.parseInt(br.readLine());
+
+        int hasil = 1;
+        int i = 1;
+
+        while (i <= pangkat) {
+            hasil = hasil * angka;
+            i++;
+        }
+
+        System.out.println("Hasil = " + hasil);
     }
-    
+
+    import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Tugas_6_4 {
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        System.out.print("Masukkan angka: ");
+        int angka = Integer.parseInt(br.readLine());
+
+        System.out.print("Masukkan pangkat: ");
+        int pangkat = Integer.parseInt(br.readLine());
+
+        int hasil = 1;
+        int i = 1;
+
+        do {
+            hasil = hasil * angka;
+            i++;
+        } while (i <= pangkat);
+
+        System.out.println("Hasil = " + hasil);
+    }
+}
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Tugas_6_4 {
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        System.out.print("Masukkan angka: ");
+        int angka = Integer.parseInt(br.readLine());
+
+        System.out.print("Masukkan pangkat: ");
+        int pangkat = Integer.parseInt(br.readLine());
+
+        int hasil = 1;
+
+        for (int i = 1; i <= pangkat; i++) {
+            hasil = hasil * angka;
+        }
+
+        System.out.println("Hasil = " + hasil);
+    }
+}
 }
