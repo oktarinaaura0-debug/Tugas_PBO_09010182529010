@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package Tugas_4;
-
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
 public class Tugas_4_3 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int number1 = 10;
+        int number2 = 23;
+        int number3 = 5;
+
+        int terbesar = (number1 > number2)
+                ? ((number1 > number3) ? number1 : number3)
+                : ((number2 > number3) ? number2 : number3);
+
+        System.out.println("number 1 = " + number1);
+        System.out.println("number 2 = " + number2);
+        System.out.println("number 3 = " + number3);
+        System.out.println("Nilai tertingginya adalah angka = " + terbesar);
     }
-    
 }
