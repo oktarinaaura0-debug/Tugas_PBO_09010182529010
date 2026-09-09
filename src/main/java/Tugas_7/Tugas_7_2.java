@@ -1,20 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package Tugas_7;
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author Ann Dwi Marjusalinah
- */
 public class Tugas_7_2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int[] angka = new int[10];
+
+        // Memasukkan 10 nomor
+        for (int i = 0; i < angka.length; i++) {
+            angka[i] = Integer.parseInt(
+                JOptionPane.showInputDialog(
+                    "Masukkan nomor ke-" + (i + 1)
+                )
+            );
+        }
+
+        // Mencari nomor terbesar
+        int terbesar = angka[0];
+
+        for (int i = 1; i < angka.length; i++) {
+            if (angka[i] > terbesar) {
+                terbesar = angka[i];
+            }
+        }
+
+        // Menampilkan hasil
+        JOptionPane.showMessageDialog(
+            null,
+            "Nomor terbesar adalah: " + terbesar
+        );
     }
-    
 }
